@@ -1,0 +1,353 @@
+<html lang='ru'>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+    <title>DView - Коблик Групп</title>
+    <link rel='stylesheet' href='https://rohh.ru/API/style.css'/>
+    <meta name='description' content='Check what item you are searching for Koblik Group'>
+    <meta name='developer' content='Rohh Thone'/>
+    <meta name='owner' content='KoblikGroup'/>
+    <meta property='og:title' content='DView - Коблик Групп'/>
+    <meta property='og:description' content='Check what item you are searching for Koblik Group'/>
+    <meta property='og:image' content=''/>
+    <meta property='og:url' content=''/>
+    <meta property='og:site_name' content=''/>
+    <meta property='og:locale' content='ru_RU'/>
+    <meta property='og:type' content='website'/>
+    <meta property='og:updated_time' content='2021-10-01T00:00:00+03:00'/>
+    <meta property='og:see_also' content='https://rohh.ru/'/>
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <meta name='theme-color' content='#FFF'/>
+    <meta name='robots' content='index, follow'/><meta name='googlebot' content='index, follow'/><meta name='yandex' content='index, follow'/><meta name='google' content='index, follow'/><meta name='msnbot' content='index, follow'/><meta name='bingbot' content='index, follow'/><meta name='alexabot' content='index, follow'/><meta name='slurp' content='index, follow'/><meta name='baiduspider' content='index, follow'/><meta name='duckduckbot' content='index, follow'/><meta name='teoma' content='index, follow'/><meta name='sogou' content='index, follow'/><meta name='exabot' content='index, follow'/><meta name='facebot' content='index, follow'/><meta name='ia_archiver' content='index, follow'/><meta name='archive.org_bot' content='index, follow'/><meta name='mj12bot' content='index, follow'/><meta name='yandexbot' content='index, follow'/>
+  <!-- add roboto font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap">
+  </head>
+  <body>
+    <style>
+      /* add COFOSANS-MEDIUM.7B4F13E43D4F.OTF */
+      @font-face {
+        font-family: 'CoFo Sans Medium';
+        src: url('../COFOSANS-MEDIUM.7B4F13E43D4F.OTF') format('opentype');
+        font-weight: 400;
+        font-style: normal;
+      }
+      :root{
+        --width:1024px;
+        --background: #f4f4f4;
+        --foreground: #000;
+        --accent: #163ad8;
+        --button-padding: 4px 12px 5px 13px;
+        --radius: 12px;
+        --border-color: #1113;
+      }
+      body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: var(--background);
+        color: var(--foreground);
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+      header{
+        width: 100%;
+        height: 74px;
+        border-bottom: 1px solid var(--border-color);
+      }
+      header .brand{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header .brand img{
+        width: 100%;
+        height: 100%;
+        max-width: 300px;
+        max-height: 74px;
+      }
+      @media (max-width: 1024px){
+        :root{
+          --width: 100%;
+        }
+      }
+    </style>
+    <header>
+      <div class="brand">
+        <img src="../header.svg" alt="">
+      </div>
+    </header>
+    <style>
+      body{
+        height: 100vh;
+      }
+      main{
+        width: var(--width);
+        margin: 0 auto;
+        padding: 0 20px;
+        position: relative;
+        height: 100%;
+        max-height: calc(100vh - 74px);
+        display: grid;
+        grid-template-rows: min-content 1fr;
+        border-left: 1px solid var(--border-color);
+        border-right: 1px solid var(--border-color);
+      }
+      main .title{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+        margin: 20px 0;
+      }
+      form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 14px;
+      }
+      /* .custom-file-input {
+        color: transparent;
+        width: 100%;
+        position: relative;
+      }
+      .custom-file-input::-webkit-file-upload-button {
+        visibility: hidden;
+      }
+      .custom-file-input::before {
+        content: 'Выберите файлы';
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        background: var(--accent);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius);
+        padding: var(--button-padding);
+        outline: none;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        cursor: pointer;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 1px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: max-content;
+        transition: 0.2s;
+      }
+      .custom-file-input:hover::before {
+        border-color: black;
+        opacity: 0.7;
+      }
+      .custom-file-input:active {
+        outline: 0;
+      }
+      .custom-file-input:active::before {
+        background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+      } */
+      #image-placeholder{
+        width: 100%;
+        aspect-ratio: 1/1 !important;
+        background: #1111;
+        border-radius: var(--radius);
+        object-fit: cover;
+      }
+      #image-placeholder > img{
+        display: none;
+      }
+      #image-placeholder.active > img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: var(--radius);
+      }
+      @media (max-width: 1024px){
+        main{
+          --width: 100%;
+        }
+      }
+      @media (min-width: 1024px){
+        #image-placeholder{
+          max-width: 340px;
+        }
+      }
+      form > button{
+        background: #1114;
+        width: 100%;
+        border: none;
+        position: absolute;
+        bottom: 0;
+        padding: var(--button-padding);
+        font-size: 32px;
+        color: #1114;
+      }
+      form > button.active{
+        width: 100%;
+        background: var(--accent);
+        
+        
+        color: #fff;
+      }
+      form > button.active:hover{
+        opacity: 0.7;
+      }
+      #upload{
+        display: none;
+      }
+      #upload + label{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+        background: var(--accent);
+        border: 1px solid var(--border-color);
+        padding: var(--button-padding);
+        outline: none;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        cursor: pointer;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 1px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        transition: 0.2s;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      #upload.deactive + label{
+        background: #1114;
+        color: #1114;
+      }
+    </style>
+    <main>
+      <span class="title" id="text-top">
+        Сфотографируйте товар
+      </span>
+      <form action="https://a30a-89-116-228-77.ngrok-free.app/images" id="input" method="POST" enctype="multipart/form-data" onsubmit="event.preventDefault(); check(this);">
+        <div id="image-placeholder">
+          <img src="" alt="">
+        </div>
+        <input type="file" name="image[]" id="upload" accept="image/*" capture="user" class="custom-file-input" onchange="placeImage(this)" required>
+        <label class="button" for="upload" id="upload-label">Загрузите файл</label>
+      </form>
+      <style>
+        #popup{
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          background: rgba(0,0,0,0.5);
+          backdrop-filter: blur(10px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 999;
+          opacity: 0;
+          pointer-events: none;
+          transition: 0.2s;
+        }
+        #popup.activate{
+          opacity: 1;
+          pointer-events: all;
+          animation: loading 1s infinite;
+        }
+        #popup h1{
+          font-size: 32px;
+          font-weight: 500;
+          color: #fff;
+          text-align: center;
+        }
+        @keyframes loading{
+          0%{
+            transform: scale(1);
+          }
+          50%{
+            transform: scale(1.1);
+          }
+          100%{
+            transform: scale(1);
+          }
+        }
+      </style>
+    <div id="popup">
+      <h1 id="loading">Загрузка</h1>
+    </div>
+    </main>
+    <script>
+      function placeImage(input){
+        const imagePlaceholder = document.querySelector('#image-placeholder');
+        const file = input.files[0];
+        const reader = new FileReader();
+        reader.onload = function(e){
+          imagePlaceholder.classList.add('active');
+          imagePlaceholder.innerHTML = `<img src="${e.target.result}" alt="">`;
+          document.querySelector('#send').classList.add('active');
+          document.querySelector('#text-top').innerHTML = 'Отправьте фотографию';
+          // add .deactive class to this
+          document.querySelector('#upload').classList.add('deactive');
+          document.querySelector('#upload-label').innerHTML = 'Заменить фотографию';
+          // add #image-placeholder.active
+          
+        }
+        reader.readAsDataURL(file);
+      }
+      function check(e){
+        // console.log(e);
+        const formData = new FormData(e);
+        // console.log(formData);
+        // console log upload file
+        let data = formData.get('image[]');
+        console.log(data);
+        // API(formData);
+        API(data)
+
+      }
+      let data1 = '';
+      document.getElementById('upload').addEventListener('change', event => {
+                    const files = event.target.files;
+                    const formData = new FormData();
+                    formData.append('image', files[0]);
+                    loadingToggle();
+                    fetch('https://r7g3dq65-5000.uks1.devtunnels.ms/images', {
+                        method: 'POST',
+                        body: formData,
+                    })
+                        .then(response => data1 = response.json())
+                        .then(result => {
+                            console.log('Success:', result);
+                            data1 = result;
+                            display(data1);
+                        })
+                        .catch(error => {
+                            console.log(error);
+                        });
+                });
+
+      function display(e){
+        console.log(e);
+        // console log values of data1
+        let values = Object.values(e);
+        console.log(values);
+        loadingToggle();
+
+        document.querySelector('#text-top').innerHTML = `Это деталь ${values[0]}!`;
+      }
+      function loadingToggle(){
+        document.querySelector('#popup').classList.toggle('activate');
+      }
+    </script>
+  </body>
+</html>
